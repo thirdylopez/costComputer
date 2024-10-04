@@ -9,4 +9,6 @@ public class Volume {
     private BigDecimal height;
     private BigDecimal width;
     private BigDecimal length;
+
+    private String voucherCode;
 }

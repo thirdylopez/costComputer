@@ -17,7 +17,6 @@ public enum Rules {
     HEAVY_PARCEL(BigDecimal.valueOf(10.0), BigDecimal.ZERO){
         @Override
         public BigDecimal calculateCost(BigDecimal inputWeight, BigDecimal inputVolume) {
-            //throw Error
             return inputWeight.multiply(BigDecimal.valueOf(20.0)).setScale(2, RoundingMode.HALF_DOWN);
         }
     },
@@ -43,7 +42,7 @@ public enum Rules {
     private final BigDecimal weightLimit;
     private final BigDecimal volumeLimit;
 
-    private Rules(BigDecimal weightLimit, BigDecimal volumeLimit){
+    Rules(BigDecimal weightLimit, BigDecimal volumeLimit){
         this.weightLimit = weightLimit;
         this.volumeLimit = volumeLimit;
     }
