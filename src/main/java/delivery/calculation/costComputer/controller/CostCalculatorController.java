@@ -18,7 +18,7 @@ public class CostCalculatorController {
     private final CostComputerService costComputerService;
 
     @PostMapping(COST_COMPUTER_PATH)
-    public BigDecimal calculateDeliveryCost(@RequestBody Volume volume){
+    public BigDecimal calculateDeliveryCost(@RequestBody Volume volume) {
         BigDecimal initialDeliveryCost = costComputerService.calculateDeliveryCost(volume.getWeight(), volume.getHeight(), volume.getWidth(), volume.getLength());
 
         return costComputerService.calculateNewDeliveryCostBasedOnVoucher(initialDeliveryCost, volume.getVoucherCode());

@@ -6,11 +6,11 @@ import java.time.LocalDate;
 
 @Data
 public class VoucherItem {
-        private String code = null;
+    private String code = null;
 
-        private Float discount = null;
+    private Float discount = null;
 
-        private LocalDate expiry = null;
+    private LocalDate expiry = null;
 
-        private String error;
+    private String error;
 }

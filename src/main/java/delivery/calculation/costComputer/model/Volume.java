@@ -3,6 +3,7 @@ package delivery.calculation.costComputer.model;
 import lombok.Data;
 
 import java.math.BigDecimal;
+
 @Data
 public class Volume {
     private BigDecimal weight;

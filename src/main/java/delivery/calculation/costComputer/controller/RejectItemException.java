@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Item Rejected")
-public class RejectItemException extends RuntimeException{
+public class RejectItemException extends RuntimeException {
     public RejectItemException() {
     }
 
